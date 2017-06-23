@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#239b3f">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#187638"
+        android:layout_margin="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mySafety"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:textColor="#fff"
+            android:id="@+id/tv1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:fontFamily="serif-monospace"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:layout_below="@id/tv1"
+            android:id="@+id/tv2"
+            android:layout_marginTop="50dp"/>
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/e1"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@id/tv2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="serif-monospace"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:layout_below="@id/e1"
+            android:id="@+id/tv3"
+            android:layout_marginTop="0dp"/>
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/e2"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@id/tv3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re-Enter Password"
+            android:fontFamily="serif-monospace"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:layout_below="@id/e2"
+            android:id="@+id/tv4"
+            android:layout_marginTop="0dp"/>
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/e3"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@id/tv4"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:id="@+id/b1"
+            android:layout_below="@id/e3"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

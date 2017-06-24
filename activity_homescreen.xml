@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="#187638"
+    android:background="@color/Dark_green_bg"
     tools:context="com.developers.creators.paras.aptronprojectsafetyapp.HomescreenActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         >
         <TextView
-            android:background="#6ac288"
+            android:background="@color/Light_green_layouts"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20dp"
+            android:textColor="@color/Dark_grey_text"
             android:textAlignment="center"
             android:text="Your location is Delhi"
             />
@@ -26,23 +27,24 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_weight="6"
+            android:orientation="horizontal"
             android:layout_height="match_parent"
             >
             <Button
-                android:layout_marginLeft="50dp"
-                android:layout_width="200dp"
-                android:background="#6ac288"
+                android:layout_width="150dp"
+                android:background="@color/Light_green_layouts"
                 android:id="@+id/save_me"
+                android:textColor="@color/Dark_grey_text"
                 android:textSize="30dp"
+                android:layout_centerInParent="true"
                 android:text="Save\nMe"
                 android:onClick="fun"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
+                android:layout_height="150dp"
                 />
-        </LinearLayout>
+        </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
@@ -54,39 +56,43 @@
                 android:layout_height="0dp"
                 android:layout_margin="5dp"
                 android:text="Medical"
+                android:textColor="@color/Dark_grey_text"
                 android:onClick="fun"
                 android:id="@+id/medical"
-                android:background="#6ac288"
+                android:background="@color/Light_green_layouts"
                 android:layout_weight="3"
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="5dp"
+                android:textColor="@color/Dark_grey_text"
                 android:text="Security "
                 android:onClick="fun"
                 android:id="@+id/security"
-                android:background="#6ac288"
+                android:background="@color/Light_green_layouts"
                 android:layout_weight="3"
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
+                android:textColor="@color/Dark_grey_text"
                 android:text="Travel"
                 android:onClick="fun"
                 android:id="@+id/travel"
                 android:layout_margin="5dp"
-                android:background="#6ac288"
+                android:background="@color/Light_green_layouts"
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:text="Self\nDefence"
                 android:onClick="fun"
+                android:textColor="@color/Dark_grey_text"
                 android:layout_margin="5dp"
                 android:id="@+id/self_defence"
-                android:background="#6ac288"
+                android:background="@color/Light_green_layouts"
                 android:layout_weight="3"
                 />
         </LinearLayout>
@@ -101,9 +107,10 @@
             android:layout_height="match_parent"
             android:text="Settings"
             android:onClick="fun"
+            android:textColor="@color/Dark_grey_text"
             android:id="@+id/settings"
             android:layout_margin="5dp"
-            android:background="#6ac288"
+            android:background="@color/Light_green_layouts"
             android:layout_weight="2"
             />
         <Button
@@ -111,9 +118,10 @@
             android:layout_height="match_parent"
             android:text="Nearby Help"
             android:onClick="fun"
+            android:textColor="@color/Dark_grey_text"
             android:id="@+id/nearby_help"
             android:layout_margin="5dp"
-            android:background="#6ac288"
+            android:background="@color/Light_green_layouts"
             android:layout_weight="2"
             />
         <Button
@@ -121,19 +129,21 @@
             android:layout_height="match_parent"
             android:text="Feedback"
             android:onClick="fun"
+            android:textColor="@color/Dark_grey_text"
             android:id="@+id/feedback"
             android:layout_margin="5dp"
-            android:background="#6ac288"
+            android:background="@color/Light_green_layouts"
             android:layout_weight="2"
             />
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Contact\nUs"
+            android:textColor="@color/Dark_grey_text"
             android:id="@+id/contact_us"
             android:onClick="fun"
             android:layout_margin="5dp"
-            android:background="#6ac288"
+            android:background="@color/Light_green_layouts"
             android:layout_weight="2"
             />
     </LinearLayout>

@@ -16,7 +16,7 @@ public class aptron_project_signup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aptron_project_login);
+        setContentView(R.layout.aptron_project_signup);
 
         final EditText e1 = (EditText) findViewById(R.id.e1);
         final EditText e2 = (EditText) findViewById(R.id.e2);
@@ -25,38 +25,31 @@ public class aptron_project_signup extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (e1.getText().toString().trim().length() == 0) {
-                    e1.setError("Enter Phone Number");
-                    e1.requestFocus();
-                }
-                else if (e1.getText().toString().trim().length() != 10){
+
+                if (e1.getText().toString().trim().length() != 10){
                         e1.setError("Phone Number is invalid");
                         e1.requestFocus();
-                }
-                else if (e2.getText().toString().trim().length() == 0) {
-                    e2.setError("Enter a Password");
-                    e2.requestFocus();
                 }
                 else if (e2.getText().toString().trim().length() < 6)
                 {
                     e2.setError("Password must be atleast 6 characters");
                     e2.requestFocus();
                 }
-                else if (e3.getText().toString().trim().length() == 0) {
+               /* else if (e3.getText().toString().trim().length() == 0) {
                     e3.setError("Enter Confirm Password");
                     e3.requestFocus();
                 }
-                 else if (e3.getText().toString().trim().length() < 6) {
+                else if (e3.getText().toString().trim().length() < 6) {
                         e3.setError("Password must be atleast 6 characters");
                         e3.requestFocus();
-                    }
-                else if(e2.getText().toString().trim().length() != e3.getText().toString().trim().length())
+                    }*/
+                if(e2.getText().toString().trim().length() != e3.getText().toString().trim().length())
                     {
                         e3.setError("Password and Confirm Password must be same");
                         e3.requestFocus();
                     }
                 else {
-                    Intent it = new Intent(getApplicationContext(), aptron_project_login.class);
+                    Intent it = new Intent(aptron_project_signup.this, aptron_project_login.class);
                     startActivity(it);
                 }
             }

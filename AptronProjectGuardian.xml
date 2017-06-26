@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#187638"
+    android:background="@color/Dark_green_bg"
     android:orientation="vertical"
     tools:context="com.priya.cs.aptronproject.AptronProjectGuardian">
 <LinearLayout
@@ -26,26 +26,29 @@
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.8"
+        android:layout_weight="0.7"
         android:id="@+id/b1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+       android:layout_gravity="center"
         android:textColor="#000"
         android:textSize="20dp"
+        android:background="@drawable/round_button"
         android:typeface="serif"
 
         android:text="Choose From Contacts"/>
+
     <TextView
 
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:id="@+id/tv2"
-        android:textSize="25dp"
-        android:textColor="#fff"
-        android:typeface="serif"
         android:layout_gravity="center"
-        android:text="OR"/>
+        android:layout_weight="0.6"
+        android:text="OR"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -69,7 +72,7 @@
         android:layout_weight="0.8"
         android:hint="Enter guardian phone"
         android:id="@+id/et2"
-        android:inputType="phone"
+        android:inputType="number"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:typeface="serif"
@@ -107,6 +110,7 @@
         android:textColor="#000"
         android:id="@+id/b2"
         android:textSize="20dp"
+        android:background="@drawable/round_button"
         android:text="Next"
         android:typeface="serif"
         android:layout_marginLeft="20dp"
@@ -114,6 +118,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
             android:textColor="#000"
             android:layout_weight="1"
             android:textSize="20dp"

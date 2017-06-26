@@ -25,7 +25,7 @@ public class AptronProjectGuardian extends AppCompatActivity {
                     et2.setError("Enter a valid phone number");
 
                 }
-                else if (!(email.matches(emailPattern)))
+                if (!(email.matches(emailPattern)))
                     et3.setError("Invalid Email Address");
             }
         });

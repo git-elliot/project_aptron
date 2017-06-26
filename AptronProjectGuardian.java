@@ -20,14 +20,12 @@ public class AptronProjectGuardian extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                final String email = et3.getText().toString().trim();
                 if (et2.getText().toString().length() != 10) {
                     et2.setError("Enter a valid phone number");
 
                 }
-
-                final String email = et3.getText().toString().trim();
-                if (!(email.matches(emailPattern)))
+                else if (!(email.matches(emailPattern)))
                     et3.setError("Invalid Email Address");
             }
         });

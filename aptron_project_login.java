@@ -24,21 +24,21 @@ public class aptron_project_login extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(e1.getText().toString().trim().length()==0)
+             /*   if(e1.getText().toString().trim().length()==0)
                 {
                     if(e1.getText().toString().trim().length()!=10)
                     e1.setError("Enter Phone Number");
                     e1.requestFocus();
-                }
-                else if (e1.getText().toString().trim().length() != 10){
+                }*/
+                 if (e1.getText().toString().trim().length() != 10){
                     e1.setError("Phone Number is invalid");
                     e1.requestFocus();
                 }
-                else if(e2.getText().toString().trim().length()==0)
+             /*   else  if(e2.getText().toString().trim().length()==0)
                 {
                     e2.setError("Password must be atleast 6 characters");
                     e2.requestFocus();
-                }
+                }*/
                 else if (e2.getText().toString().trim().length()<6)
                 {
                     e2.setError("Password must be atleast 6 characters");
@@ -46,32 +46,10 @@ public class aptron_project_login extends AppCompatActivity {
                 }
                 else
                 {
-                    Intent it = new Intent(getApplicationContext(), aptron_project_signup.class);
+                    Intent it = new Intent(aptron_project_login.this, aptron_project_signup.class);
                     startActivity(it);
                 }
             }
         });
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

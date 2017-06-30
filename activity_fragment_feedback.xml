@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Thank you for using this service"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="serif"
+        android:textStyle="italic|bold"/>
+    <EditText
+        android:layout_marginTop="40dp"
+        android:hint="Give your feedback here..."
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/Light_green_layouts"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Rate the app"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#fff"
+        android:fontFamily="serif"
+        android:textStyle="italic|bold"
+        android:layout_marginLeft="20dp"/>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Dark_green_bg"
+        android:numStars="5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

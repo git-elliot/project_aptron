@@ -10,58 +10,36 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:src="@mipmap/ic_launcher_round"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="Meri Safety"
-        android:textSize="50sp"
-        android:gravity="center"
-        android:layout_weight="4"/>
+        android:layout_weight="1"
+        android:src="@drawable/round_safety_launcher"/>
+
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-    <TextView
-        android:layout_width="0dp"
+        <Button
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:id="@+id/b1"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Login"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttons_background"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:id="@+id/b2"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="30sp"
+            android:text="Signup"
+            android:background="@drawable/buttons_background"
+            android:layout_weight="1"/></LinearLayout>
 
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="For Login "
-        android:layout_weight="1"/>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="For Signup"
-        android:layout_weight="1"/></LinearLayout>
-<LinearLayout
-android:layout_marginLeft="10dp"
-android:layout_marginRight="10dp"
-android:layout_width="match_parent"
-android:layout_height="0dp"
-android:layout_weight="2">
-
-<Button
-    android:layout_width="0dp"
-android:id="@+id/b1"
-    android:layout_height="wrap_content"
-    android:textSize="30sp"
-    android:text="Login"
-    android:layout_marginRight="10dp"
-    android:background="@drawable/button_background"
-    android:layout_weight="1"/>
-<Button
-    android:layout_width="0dp"
-    android:id="@+id/b2"
-    android:layout_height="wrap_content"
-    android:textSize="30sp"
-    android:text="Signup"
-    android:background="@drawable/button_background"
-    android:layout_weight="1"/></LinearLayout>
-
-    </LinearLayout>
+</LinearLayout>

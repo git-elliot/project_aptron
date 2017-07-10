@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="aboutapp"
+    tools:context="com.developers.droidteam.merisafety.Frag_aboutapp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="About Merisafety"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="50sp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Safety is the state of being "
+    android:textSize="30sp"
+    android:layout_marginTop="15dp"
+    android:textColor="#000"
+    android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAFE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MeriSafety app provides that needed safety to everyone who downloads it."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All you have to do is create an account on this app and register a guardian's contact details and email details."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whenever you are in an emergency, be it medical, transportation, harrassment you can press on the required button."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MeriSafety app will automatically call your registered guardian and also E-mail and message them your current location."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app will help you by showing you the nearby hospitals, bus stops, police stations."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Once you feel you are out of danger, you can also de-activate your alert. The message for the sane will be delivered to your registered guardian."
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:typeface="sans"/>
+</LinearLayout>
+
+</ScrollView>

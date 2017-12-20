@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#239b3f"
+
+
+    tools:context="ridhima.mysafety.aptron_project_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="meriSafety"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"
+            android:id="@+id/tv1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:typeface="sans"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:id="@+id/tv2"
+            android:layout_marginTop="50dp"/>
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/e1"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="55dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:typeface="sans"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:id="@+id/tv3"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="250sp"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content"
+            android:id="@+id/e2"
+            android:layout_weight="1"
+            android:layout_marginLeft="55dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/b1"
+            android:layout_marginLeft="130dp"
+           android:typeface="sans"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4"
+            android:layout_weight="1"
+            android:text="Not a member? Sign Up for Free!"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+</ScrollView>
